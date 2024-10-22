@@ -177,18 +177,9 @@ WHILE YORDAMIDA RO'YXATNI TO'LDIRISH
 #     print(f"{n} - talaba ismi: {ism}, baho: {baho}")
 
 
-print("Bu dasturda siz talabalarning bahosi va o'tgan talabalarni yani  bahosi yetganlarni ko'rsatadi! ")
-talabalar = {}
-yiqilgan = {}
-n = 1
-while True:
-    ism = input(f"{n} - talabaning ismini kirirting: ").title()
-    baho = int(input(f"{ism}ning bahosni kiriting: "))
-    if baho>2:
-        continue
-    talabalar[ism] = baho
-    print(f"{n} - talaba {ism.title()} yakuniydan {baho} bilan o'tdi! ")
-print("Yakuniydan o'tgan talabalarni ko'rishingiz mumkun: ")
+
+
+
 
 
 

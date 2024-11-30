@@ -183,37 +183,38 @@ Funksiya bilan tanishish
 
 
 
-# def aftomobil_jam(nomi, rangi, turi, yoqilgi_sarfi, karobka, yil, narhi = None ):
-#     mashina = {
-#         'nomi': nomi,
-#         'rangi': rangi,
-#         'turi': turi,
-#         "yoqilg'i sarfi": yoqilgi_sarfi,
-#         'karobka': karobka,
-#         'yili': yil,
-#         'narhi': narhi
-#     }
-#     return mashina
-#
-#
-# cars = []
-#
-# print("Siz bu dastur orqali mashinalar ro'yhatni tuza olasiz")
-#
-# while True:
-#     print("Quydagi savollarni to'ldiring")
-#     nomi = input("Mashina modeli kiriting: ")
-#     rangi = input("Rangni kiriting: ")
-#     turi = input("Turini kiriting: ")
-#     sarfi_y = input("Yoqilg'i sarfni kiritng: ")
-#     karobka = input("Karobkasni kiriting: ")
-#     yili = input("Chiqgan yilni kiriting: ")
-#     narhi = int(input("Narhni kiritng $ : "))
-#
-#     cars.append(aftomobil_jam(nomi, rangi, turi, sarfi_y, karobka, yili, narhi))
-#     savol = input("Davom etishni istaysizmi unda (yes/no) ni kiriting : ")
-#     if savol.lower() == 'no':
-#         break
+def aftomobil_jam(nomi, rangi, turi, yoqilgi_sarfi, karobka, yil, narhi = None ):
+    mashina = {
+        'nomi': nomi,
+        'rangi': rangi,
+        'turi': turi,
+        "yoqilg'i sarfi": yoqilgi_sarfi,
+        'karobka': karobka,
+        'yili': yil,
+        'narhi': narhi
+    }
+    return mashina
+
+
+cars = []
+
+print("Siz bu dastur orqali mashinalar ro'yhatni tuza olasiz")
+
+while True:
+    print("Quydagi savollarni to'ldiring")
+    nomi = input("Mashina modeli kiriting: ")
+    rangi = input("Rangni kiriting: ")
+    turi = input("Turini kiriting: ")
+    sarfi_y = input("Yoqilg'i sarfni kiritng: ")
+    karobka = input("Karobkasni kiriting: ")
+    yili = input("Chiqgan yilni kiriting: ")
+    narhi = int(input("Narhni kiritng $ : "))
+
+    cars.append(aftomobil_jam(nomi, rangi, turi, sarfi_y, karobka, yili, narhi))
+    savol = input("Davom etishni istaysizmi unda (yes/no) ni kiriting : ")
+    if savol.lower() == 'no':
+        break
+
 # for mashina in cars:
 #     print("Modeli " ,mashina['nomi'], 'rangi ', mashina['rangi'], 'narxi' , mashina['narhi'] ,'ming $')
 

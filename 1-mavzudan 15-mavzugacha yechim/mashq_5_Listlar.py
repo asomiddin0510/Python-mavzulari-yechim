@@ -141,6 +141,68 @@ Listlar(Ro'yxatlar) bilan ishlash
 
 
 
+"""### List (Ro'yhat) haqida tushuncha
+
+**List** (ro'yhat) Python dasturlash tilida keng qo'llaniladigan ma'lumot tuzilmasi bo'lib, u tartiblangan va o'zgartiriladigan elementlar to'plamini ifodalaydi. Ro'yhatlar kvadrat qavslar `[]` ichida yaratiladi va elementlar vergul `,` bilan ajratiladi. Ro'yhatlar turli xil ma'lumot turlarini o'z ichiga olishi mumkin, masalan, butun sonlar, satrlar, boshqa ro'yhatlar va hokazo.
+
+#### Ro'yhat yaratish
+```python
+my_list = [1, 2, 3, 'apple', 'banana']
+```
+
+#### Ro'yhat elementlariga murojaat qilish
+```python
+print(my_list[0])  # 1
+print(my_list[3])  # 'apple'
+```
+
+#### Ro'yhat elementlarini o'zgartirish
+```python
+my_list[1] = 'orange'
+print(my_list)  # [1, 'orange', 3, 'apple', 'banana']
+```
+
+#### Ro'yhatga element qo'shish
+```python
+my_list.append('cherry')
+print(my_list)  # [1, 'orange', 3, 'apple', 'banana', 'cherry']
+```
+
+#### Ro'yhatdan element olib tashlash
+```python
+my_list.remove('apple')
+print(my_list)  # [1, 'orange', 3, 'banana', 'cherry']
+```
+
+#### Ro'yhat uzunligini aniqlash
+```python
+print(len(my_list))  # 5
+```
+
+### Ro'yhatlar bilan bog'liq 20 ta masala
+
+1. **Ro'yhat yaratish**: Bo'sh ro'yhat yarating va unga 5 ta element qo'shing.
+2. **Ro'yhat elementlarini chiqarish**: Ro'yhatdagi barcha elementlarni birma-bir chiqarib bering.
+3. **Ro'yhat uzunligini aniqlash**: Ro'yhat uzunligini aniqlang va chop eting.
+4. **Ro'yhat elementini o'zgartirish**: Ro'yhatdagi ikkinchi elementni o'zgartiring.
+5. **Ro'yhatga element qo'shish**: Ro'yhat oxiriga yangi element qo'shing.
+6. **Ro'yhatdan element olib tashlash**: Ro'yhatdan birinchi uchraydigan elementni olib tashlang.
+7. **Ro'yhatni tartiblash**: Ro'yhatdagi sonlarni o'sish tartibida tartiblang.
+8. **Ro'yhatni teskari tartiblash**: Ro'yhatni teskari tartibda chiqaring.
+9. **Ro'yhatni tozalash**: Ro'yhatni tozalang (barcha elementlarni olib tashlang).
+10. **Ro'yhatni nusxalash**: Ro'yhatni yangi ro'yhatga nusxalash.
+11. **Ro'yhatni birlashtirish**: Ikki ro'yhatni birlashtirib yangi ro'yhat yarating.
+12. **Ro'yhat elementlarini sanash**: Ro'yhatda ma'lum bir element necha marta uchrashini aniqlang.
+13. **Ro'yhatni kesish**: Ro'yhatning bir qismini kesib oling (slicing).
+14. **Ro'yhatda element borligini tekshirish**: Ro'yhatda ma'lum bir element borligini tekshiring.
+15. **Ro'yhat indeksini aniqlash**: Ro'yhatda ma'lum bir elementning indeksini aniqlang.
+16. **Ro'yhatni qayta tartiblash**: Ro'yhatni o'sish tartibida qayta tartiblang va chop eting.
+17. **Ro'yhat elementlarini aylantirish**: Ro'yhat elementlarini aylantirib yangi ro'yhat yarating.
+18. **Ro'yhatga element qo'shish (insert)**: Ro'yhatning ma'lum bir joyiga yangi element qo'shing.
+19. **Ro'yhatni ko'paytirish**: Ro'yhatni bir necha marta takrorlab yangi ro'yhat yarating.
+20. **Ro'yhatni stringga aylantirish**: Ro'yhatni stringga aylantirib chop eting.
+
+Ushbu masalalarni yechish orqali siz ro'yhatlar bilan ishlashni yaxshi o'rganishingiz mumkin. Har bir masalani mustaqil ravishda yechib ko'ring va Python kodini yozing. Agar biror bir masalada qiyinchilikka duch kelsangiz, yordam so'rashdan tortinmang!"""
 
 
 
@@ -149,8 +211,29 @@ Listlar(Ro'yxatlar) bilan ishlash
 
 
 
+"""Quyidagi mashqlarni bajaring:
 
+    ismlar degan ro'yxat yarating va kamida 3 ta yaqin do'stingizning ismini kiriting
 
+    Ro'yxatdagi har bir do'stingizga qisqa xabar yozib konsolga chiqaring: 
+
+    sonlar deb nomlangan ro'yxat yarating va ichiga turli sonlarni yuklang (musbat, manfiy, butun, o'nlik). 
+
+    Yuqoridagi ro'yxatdagi sonlar ustida turli arifmetik amallar bajarib ko'ring. Ro'yxatdagi ba'zi sonlarning qiymatini o'zgartiring, ba'zilarini esa almashtiring. 
+
+    t_shaxslarva z_shaxslar degan 2 ta ro'yxat yarating va biriga o'zingiz eng ko'p hurmat qilgan tarixiy shaxslarning, ikkinchisiga esa zamonamizdagi tirik bo'lgan shaxslarning ismini kiriting. 
+
+    Yuqoridagi ro'yxatlarning har biridan bittadan qiymatni sug'urib olib (
+    .pop()
+    ), quyidagi ko'rinishda chiqaring:
+
+    friendsnomli bo'sh ro'yxat tuzing va unga .append() yordamida 5-6 ta mehmonga chaqirmoqchi bo'lgan do'stlaringizni kiriting. 
+
+    Yuqoridagi ro'yxatdan mehmonga kela olmaydigan odamlarni .remove() metodi yordamida o'chrib tashlang. 
+
+    Ro'yxatning oxiriga, boshiga va o'rtasiga yangi ismlar qo'shing.
+
+    Yangi mehmonlardeb nomlangan bo'sh ro'yxat yarating. .pop() va .append() metodlari yordamida mehmonga kelgan do'stlaringizning ismini friends ro'yxatidan sug'urib olib, mehmonlar ro'yxatiga qo'shing."""
 
 
 
